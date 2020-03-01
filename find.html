@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 문서를 보는 방식을 말함.
+    즉 meta요소 사용 하여 X-UA-Compatible header를 추가해
+    IE버전을 지정하는 것.
+    edge모드는 IE버전 중 가장 최신모드로 표시.
+    IE문서모드는 퇴화할 것이며 edge모드를 추천함
+    -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--
+    rel: (관계에서 오는)속성 이름
+    href: 연결하려는 문서의 위치
+    integrity: 연결하려는 파일이
+    수정 안된 것을 확인하기 위해 사용되는 해쉬 값(hash value).
+    crossorigin:이 속성이 존재하면 CORS(cross origin resource share)가
+    가능해져 다른 origin의 자원을 얻어올 수 있다고 함.
+     -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Find | kakao Clone</title>
+  </head>
+  <!--
+  div: 줄 바꿈 가능함
+  span: 줄 바꿈이 되지 않음 -->
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">17:00</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-clock"></i>
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">Find</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+    <main class="find">
+      <header class="find__header">
+        <ul class="find__header-btn header-btn">
+          <li class="find__header-btn header-btn">
+            <span>
+              <i class="fas fa-qrcode fa-2x"></i>
+            </span>
+            <span>QR Code</span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span>
+              <i class="fas fa-user-plus fa-2x"></i>
+            </span>
+            <span>Add By Contacts</span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span>
+              <i class="fas fa-passport fa-2x"></i>
+            </span>
+            <span>Add By ID</span>
+          </li>
+          <li>
+            <span>
+              <i class="far fa-envelope fa-2x"></i>
+            </span>
+            <span>Invite</span>
+          </li>
+        </ul>
+      </header>
+      <ul>
+        <h5>recommended Friends</h5>
+        <li>
+          <div class="">
+            <img src="friend__avatar friend--lg" alt="images/hhl.jpg">
+            <div class="">
+              <span>rebecca</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <nav>
+      <ul>
+        <li>
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+          </a>
+        <li>
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li>
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="">
+
+    </div>
+  </body>
+</html>
