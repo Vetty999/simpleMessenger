@@ -12,4 +12,22 @@
 
 .header .header__icon {
   font-size: 20px;
+  margin-left: 20px;
+  /* 해당 태그 위에 위치하는 마우스 커서의 모양을 변경 할 수있다
+  auto: 자동
+  default: 기본값 (화살표)
+  pointer: 손가락 모양 (클릭 가능한 버튼)
+  wait: 로딩
+*/
+  cursor: pointer;
+}
+
+.header .header__header-column {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__back-btn {
+  font-size: 22px;
+  margin-right: 20px;
 }

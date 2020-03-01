@@ -1,0 +1,79 @@
+.nav {
+  /* box단위 태그 배열
+    static, relativ, fixed, absolute
+
+    static: 기본,자동배치되며 임의로 위치설정불가.
+    absolute: 절대좌표와 함께 위치를 지정가능.
+    relative: 원 위치를 기준으로 좌표를 지정.
+    fixed: 문서 최 좌측상단을 기준으로 좌표고정.
+    inherit: 부모 태그의 속성값을 상속받습니다.
+  */
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  left: 0px;
+  bottom: 0px;
+  padding: 20px 50px;
+  background-color: #fcfcfc;
+  border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav__list {
+  display: flex;
+  /* 간격 및 가로배치 */
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+.nav .nav__list-link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  /* 어떻게 보여줄지 표기
+  none, block, inline, inline-block
+*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+
+/*
+@keyframes : 어떤 모양에서 어떤 모양으로 변할 지 정하기.
+transform : 좌표공간변형하여 콘텐츠의 형태와 위치 변경.
+transform-origin: 점 기준 변경
+transform: 요소 적용 변경
+
+
+*/
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+/*
+animation
+*/
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
