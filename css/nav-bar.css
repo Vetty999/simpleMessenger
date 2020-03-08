@@ -70,7 +70,7 @@ transform: 요소 적용 변경
 }
 
 /*
-animation
+animation : 자바스크립트를 사용하지 않고 간단한 움직임만들기
 */
 .nav {
   transform: translateY(80px);

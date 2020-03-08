@@ -1,0 +1,51 @@
+.find {
+  margin-top: 50px;
+}
+
+.find .find__header-list {
+  display: flex;
+  justify-content: space-areound;
+}
+
+/**
+flex box= flex container + flex item
+
+flex item의 ‘방향’을 제어 ‘flex-direction’.
+flex item의 ‘줄 바꿈’을 제어 ‘flex-wrap’.
+flex item의 ‘뱡향과 줄 바꿈’을 제어‘flex-flow’.
+flex item의 ‘배치 순서’를 제어 ‘order’.
+
+align-items 속성은 플렉스 요소의 수직 방향 정렬 방식을 설정.
+**/
+
+.find .header-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/** display(표시 ,나타냄) : 요소를 어떻게 보여줄지 표시
+
+**/
+.find .header-btn__title {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.find .header-btn__icon {
+  font-size: 12px;
+}
+
+.find .find__recommended {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.find .find__title {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+
+}

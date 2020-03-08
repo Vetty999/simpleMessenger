@@ -60,67 +60,76 @@
       <header class="find__header">
         <ul class="find__header-btn header-btn">
           <li class="find__header-btn header-btn">
-            <span>
+            <span class="header-btn__icon">
               <i class="fas fa-qrcode fa-2x"></i>
             </span>
-            <span>QR Code</span>
+            <span class="header-btn__title">QR Code</span>
           </li>
           <li class="find__header-btn header-btn">
-            <span>
+            <span class="header-btn__icon">
               <i class="fas fa-user-plus fa-2x"></i>
             </span>
-            <span>Add By Contacts</span>
+            <span class="header-btn__title">Add By Contacts</span>
           </li>
           <li class="find__header-btn header-btn">
-            <span>
+            <span class="header-btn__icon">
               <i class="fas fa-passport fa-2x"></i>
             </span>
-            <span>Add By ID</span>
+            <span class="header-btn__title">Add By ID</span>
           </li>
-          <li>
-            <span>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
               <i class="far fa-envelope fa-2x"></i>
             </span>
-            <span>Invite</span>
+            <span class="header-btn__title">Invite</span>
           </li>
         </ul>
       </header>
-      <ul>
-        <h5>recommended Friends</h5>
-        <li>
-          <div class="">
+      <ul class="find__recommended">
+        <h5 class="find__title">recommended Friends</h5>
+        <li class="find__friend friend">
+          <div class="friend__column">
             <img src="friend__avatar friend--lg" alt="images/hhl.jpg">
-            <div class="">
-              <span>rebecca</span>
+            <div class="friend__content">
+              <span class="friend__name">hhl</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__add-btn">
+              <i class="fas fa-user-plus"></i>
             </div>
           </div>
         </li>
       </ul>
     </main>
-    <nav>
-      <ul>
-        <li>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
             <i class="far fa-user"></i>
           </a>
         </li>
+        <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
             <i class="far fa-comment"></i>
           </a>
-        <li>
+        </li>
+        <li class="nav__list=item">
           <a href="find.html" class="nav__list-link">
             <i class="fas fa-search"></i>
           </a>
         </li>
-        <li>
+        <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>
           </a>
         </li>
       </ul>
     </nav>
-    <div class="">
-
+    <div class="bigScreen">
+      <span class="bigScreen__text">
+        Please make your screen small
+      </span>
     </div>
   </body>
 </html>
