@@ -23,7 +23,7 @@
 }
 
 .chats-body {
-  background-image: url("../images/chatbg.jpg")
+  background-image: url("../images/chatbg.png");
   min-height: 110vh;
 }
 
@@ -33,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0px 20px;
-  padding-top: 30px
+  padding-top: 30px;
 }
 
 .chat__messages .chat__timestamp {
@@ -41,6 +41,11 @@
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .message {
@@ -57,7 +62,7 @@
     rgba(0, 0, 0, 0.24) 0px -6px 16px -6px;
   padding: 10px 20px;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .incoming-message {
@@ -73,7 +78,7 @@
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px;
-  background-image: linear-gradient(to left, #36d1dc, #5b86e5)
+  background-image: linear-gradient(to left, #36d1dc, #5b86e5);
 }
 
 .sent-message {
