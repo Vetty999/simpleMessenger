@@ -14,7 +14,7 @@
     <title>Chat | kakao Clone</title>
   </head>
   <body class="chats-body">
-    <div class="header-wrapper">s
+    <div class="header-wrapper">
       <div class="status-bar">
         <div class="status-bar__column">
           <span class="status-bar__clock">17:00</span>
@@ -48,7 +48,7 @@
       <ul class="chat__messages">
         <span class="chat__timestamp">THURSDAY, July 5, 2018</span>
         <li class="incoming-message message">
-          <img src="images/hhl.jpg" class="m-avatar message__avata">
+          <img class="m-avatar message__avata" src="images/hhl.jpg" >
           <div class="message__content">
             <span class="message__bubble">hey, dude. todays my birthday</span>
             <span class="message__author">hhl</span>
@@ -86,15 +86,24 @@
       </ul>
     </main>
     <!-- placeholder : 인풋박스에 미리 표기되어 보여지는 문자나 숫자 -->
-    <div class="">
-      <input type="text" placeholder="send massage" class="">
-      <div class="">
+    <div class="chat__write--container">
+      <input type="text" placeholder="send massage" class="chat__write">
+      <div class="chat__icon chat__icon-left">
         <i class="far fa-plus-square"></i>
       </div>
-    </div>
-      <div class="">
-        <i class="far fa-smile-wink"></i>
-        <i class="fas fa-microphone"></i>
+      <div class="chat__icon chat__icon-right">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
       </div>
+    </div>
+    <div class="bigScreen">
+      <span class="bigScreen__text">
+        Please make your screen small
+      </span>
+    </div>
   </body>
 </html>
